@@ -1,14 +1,13 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/animation.dart';
-import 'dart:ui' show lerpDouble;
 import 'dart:math';
 import 'package:flutter/material.dart';
 
 class Bezier extends StatelessWidget {
-  Color color;
-  double scale;
-  double blur;
-  double delay;
+  final Color color;
+  final double scale;
+  final double blur;
+  final double delay;
 
   Bezier(this.color, this.scale, {this.blur = 0.0, this.delay = 0.0});
 
@@ -74,10 +73,10 @@ class PathDetail {
 }
 
 class AnimatedBezier extends StatefulWidget {
-  Color color;
-  double scale;
-  double blur;
-  double delay;
+  final Color color;
+  final double scale;
+  final double blur;
+  final double delay;
 
   AnimatedBezier(this.color, this.scale, {this.blur = 0.0, this.delay});
 
